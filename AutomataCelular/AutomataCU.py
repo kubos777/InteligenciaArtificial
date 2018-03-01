@@ -66,6 +66,7 @@ if __name__=='__main__':
 
 	if not argumentos.accion or not argumentos.tamano or not argumentos.veces:
 		parser.print_help()	
+		exit()
 
 	if argumentos.accion == 'aleatorio':
 		cadena = ''.join(random.choice('01') for _ in range(argumentos.tamano))
